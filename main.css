@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #5e17eb;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #ff914b;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #004aad;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+strong {
+    font-style: italic;
+}
+
+.circle-orange {
+    width: 220px;
+    height: 210px;
+    background-color: var(--bs-orange);
+    border-radius: 0px 0px 210px 0px;
+}
+
+.circle-blue {
+    width: 220px;
+    height: 210px;
+    background-color: var(--bs-primary);
+    border-radius: 0px 0px 210px 0px;
+}
+
+.circle-purple {
+    width: 480px;
+    height: 470px;
+    background-color: var(--bs-purple);
+    border-radius: 0px 0px 0px 470px;
+}
+
+.circle-purple-end {
+    width: 220px;
+    height: 210px;
+    background-color: var(--bs-purple);
+    border-radius: 210px 0px 0px 0px;
+}
+
+.bg-orange {
+    background-color: var(--bs-orange);
+}
+
+.border-orange {
+    border-color: var(--bs-orange);
+}
+
+
+.carousel-control-next,
+.carousel-control-prev {
+    opacity: 100%;
+    transition: none;
+}
+
+.carousel-dark .carousel-control-next-icon,
+.carousel-dark .carousel-control-prev-icon {
+    filter: none;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: var(--bs-orange);
+    border-radius: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+    display: flex;
+}
+
+.carousel-item .card {
+    margin-right: 15px;
+}
+
+.courses {
+    background: url("./img/fondo.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.glass-effect {
+    background-color: #c1c1c175;
+    backdrop-filter: blur(0.4rem);
+    -webkit-backdrop-filter: blur(0.4rem);
+}
+
+#scrollBtn {
+    position: fixed;
+    bottom: 85px;
+    right: 20px;
+    display: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* Estilo básico para un callout */
+.bd-callout {
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #e9ecef;
+    border-left-width: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+.bd-callout-info {
+    border-left-color: var(--bs-primary);
+}
