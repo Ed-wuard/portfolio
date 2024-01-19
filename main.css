@@ -76,7 +76,6 @@ strong {
 .carousel-control-next,
 .carousel-control-prev {
     opacity: 100%;
-    transition: none;
 }
 
 .carousel-dark .carousel-control-next-icon,
@@ -96,10 +95,6 @@ strong {
 .carousel-item-prev,
 .carousel-item.active {
     display: flex;
-}
-
-.carousel-item .card {
-    margin-right: 15px;
 }
 
 .courses {
@@ -125,6 +120,7 @@ strong {
     border: none;
     border-radius: 25px;
     cursor: pointer;
+    z-index: 1;
 }
 
 /* Estilo básico para un callout */
