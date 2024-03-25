@@ -97,16 +97,22 @@ strong {
     display: flex;
 }
 
+
 .courses {
-    background: url("./img/fondo.png") no-repeat;
-    background-position: center;
-    background-size: cover;
+    --bg: radial-gradient(#000 5%, #0000 6%);
+    --size: 3rem;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#0d6efd 5%, #0000 6%),
+        radial-gradient(#0d6efd 5%, #0000 6%);
+    background-position: 0 0, calc(var(--size) / 2) calc(var(--size) / 2);
+    background-size: var(--size) var(--size);
 }
 
 .glass-effect {
-    background-color: #c1c1c175;
+    background-color: #c1c1c117;
     backdrop-filter: blur(0.4rem);
-    -webkit-backdrop-filter: blur(0.4rem);
+    -webkit-backdrop-filter: blur(0.1rem);
 }
 
 #scrollBtn {
